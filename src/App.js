@@ -13,7 +13,7 @@ function App() {
       <h1>HELLO TEST 1</h1>
 
           <div className = "app__body">
-            <Sidebar />
+              <Sidebar />
     
 
       
