@@ -6,7 +6,7 @@
 
 .login > div > img {
   object-fit: contain;
-  height: 70px;
+  height: 100px;
 }
 
 .login__logo > .logo__name {
@@ -21,7 +21,7 @@
 
 .login > .login__button {
   width: 400px;
-  background-color: #2e81f4;
+  background-color: rgb(232, 175, 95);;
   color: #eff2f5;
   font-weight: 800;
   margin-top: 400px;
@@ -29,5 +29,5 @@
 
 .login > .login__button:hover {
   background-color: white;
-  color: #2e81f4;
+  color: rgb(232, 175, 95);;
 }

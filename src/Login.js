@@ -26,15 +26,10 @@ function Login() {
         <div className = "login">
             <div className = "login__logo">
                 <img 
-                    src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png"
+                    src = "https://raw.githubusercontent.com/KMMohiuddin/smarthall/master/image_2022-04-07_215828742.png"
                     alt = ""
                 />
                 
-                <img 
-                    className = "logo__name"
-                    src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/196px-Facebook_Logo_%282019%29.svg.png"
-                    alt = ""
-                />
                 </div>
             
             <Button className = "login__button" onClick = {signIn} type = "submit">

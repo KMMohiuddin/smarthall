@@ -6,7 +6,7 @@
 }
 
 .sidebarRow:hover {
-  background-color: lightgray;
+  background-color: rgb(232, 175, 95);
   border-radius: 10px;
 }
 
@@ -17,7 +17,10 @@
   border-radius: 10px;
 }
 
-.sidebarRow > h4 {
+.sidebarRow > p {
   color: rgba(0, 0, 0, 0.6);
   margin-left: 20px;
+}
+.sidebarRow >.MuiSvgIcon-root {
+  color: #2e81f4;
 }
