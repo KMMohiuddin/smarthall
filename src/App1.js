@@ -1,12 +1,14 @@
-import React from 'react'
-import './App.css';
-import Header from './Header'
-import Sidebar from './Sidebar';
-import Feed from './Feed'
-import { useStateValue } from './StateProvider';
+import React from "react";
+import "./App.css";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Feed from "./Feed";
+import { useStateValue } from "./StateProvider";
+import useLocalStorage from "./useLocalStorage";
+import homePage from "./HomePage";
 
 function App() {
-  const [{user}, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="app">
       {/*{ !user ? (<Login />) : (
@@ -22,17 +24,13 @@ function App() {
             </div>
         </>
       )}*/}
-                <Header />
+      <Header />
 
-<div className = "app__body">
-  <Sidebar />
+      <div className="app__body">
+        <Sidebar />
 
-  <Feed />
-
-  </div>
-
-      
-    </div> 
-    
+        <Feed />
+      </div>
+    </div>
   );
 }
