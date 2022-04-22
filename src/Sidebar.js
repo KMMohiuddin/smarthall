@@ -30,16 +30,9 @@ export default function Sidebar({ id }) {
     setModalOpen(false)
   }
 
-// import { useStateValue } from './StateProvider'
-
-function Sidebar() {
-   // const [{ user }, dispatch] = useStateValue();
     return (
-        <container className="sidebar">
-        <div className = "sidebar">
-            <div className = "sidebar__top">
-
-
+        <div class="row" className="sidebar">
+        <div className = "sidebar" class="col-sm-3">
             <SidebarRow 
             Icon={AccountCircleIcon}
                 title = "Bla bla bla"
@@ -83,11 +76,10 @@ function Sidebar() {
                 Icon={LogoutIcon}
                 title = "Logout"
 
-                />
-            </div>  
+                /> 
             
         </div>
-            <div style={{ width: '250px' }} className="d-flex flex-column">
+            <div  class="col-sm-3" className="d-flex flex-column">
             <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
               <Nav variant="tabs" className="justify-content-center">
                 <Nav.Item>
@@ -120,9 +112,8 @@ function Sidebar() {
               }
             </Modal>
           </div>
-          </container>
+          </div>
 
     )
-}
 }
 

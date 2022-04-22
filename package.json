@@ -57,5 +57,7 @@
   "bugs": {
     "url": "https://github.com/KMMohiuddin/smarthall/issues"
   },
-  "homepage": "https://github.com/KMMohiuddin/smarthall#readme"
+  "homepage": "https://github.com/KMMohiuddin/smarthall#readme",
+  "devDependencies": {}
 }
+

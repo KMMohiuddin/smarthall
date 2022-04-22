@@ -4,16 +4,15 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Login from "./Login";
 import useLocalStorage from "./useLocalStorage";
-import homePage from "./homePage";
+import Dashboard from "./Dashboard";
 import { ContactsProvider } from "./ContactsProvider";
 import { ConversationsProvider } from "./ConversationsProvider";
 import { SocketProvider } from "./SocketProvider";
 
-
-
 function App() {
-  const [id, setId]=  useLocalStorage('id');
-  const homePage = (
+  const [id, setId] = useLocalStorage('id')
+
+  const dashboard = (
     <SocketProvider id={id}>
       <ContactsProvider>
         <ConversationsProvider id={id}>
@@ -22,11 +21,11 @@ function App() {
       </ContactsProvider>
     </SocketProvider>
   )
-  return (
 
-    id ? <homePage id={id}/> : <Login onIdSubmit={setId}/>
-    //id ? <homePage id={id}/> : <Header/>
-  );
+  return (
+    <div className="App"> <Header /> </div>
+    //id ? dashboard : <Login onIdSubmit={setId} />
+  )
 }
 
 export default App;
